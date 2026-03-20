@@ -79,9 +79,13 @@
                 int opticalValue = (frame.data[1] << 8) | frame.data[2];
 
                 if (frame.data[0] == 0) {
+                    if(opticalValue == 65535){
+                        ui->opticalValueLabel->setText("Hors de portée");
+                    }
+                    else {
+                        ui->opticalValueLabel->setText(QString("%1 mm").arg(opticalValue));
+                    }
                     ui->opticalValueTitle->setText("Valeur Actuelle : Distance");
-                    ui->opticalValueLabel->setText(QString("%1 mm").arg(opticalValue));
-
                     ui->btnToggleCapteur->setText("Passer en mode Lumière");
                     modeLumiereActive = false;
                 }
