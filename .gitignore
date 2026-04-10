@@ -1,0 +1,30 @@
+# Pastas de Build do MCUXpresso (Lixo de compilação)
+Debug/
+Release/
+*/Debug/
+*/Release/
+
+# Arquivos objeto e dependências
+*.o
+*.d
+*.obj
+
+# Binários e arquivos de mapa
+*.axf
+*.bin
+*.hex
+*.elf
+*.map
+
+# Configurações do Workspace do Eclipse
+# (Você deve comitar as pastas dos projetos, NUNCA a pasta .metadata do workspace)
+.metadata/
+
+# Arquivos temporários do J-Link / Depuração
+*.jlink
+*.launch
+.jlink/
+
+# Arquivos do Sistema Operacional
+.DS_Store
+Thumbs.db
