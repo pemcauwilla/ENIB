@@ -87,7 +87,7 @@ class MainController:
                 
             self.state = "WAITING_FOR_BT"
             self.view.update_action_button("Waiting for BT...")
-            self.update_log("[*] System armed. Waiting for Bluetooth message 'OPEN SESAME'...")
+            self.update_log("[*] System ready. Waiting for fingerprint validation...")
 
         # State Treatment: Cancel the waiting state
         elif self.state == "WAITING_FOR_BT":
